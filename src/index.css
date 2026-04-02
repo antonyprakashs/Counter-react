@@ -1,13 +1,124 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.counter-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.count-display {
+  margin: 30px 0;
+}
+
+.count {
+  font-size: 64px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.count.zero {
+  color: #9ca3af;
+}
+
+.message-container {
+  min-height: 24px;
+  margin-bottom: 24px;
+}
+
+.limit-message {
+  margin: 0;
+  color: #dc2626;
+  font-size: 13px;
+  font-weight: 500;
+  background: #fef2f2;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.btn {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #ffffff;
+  color: #374151;
+  transition: all 0.15s ease;
+  flex: 1;
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #f3f4f6;
+  border-color: #e5e7eb;
+}
+
+.increment {
+  background: #111827;
+  color: #ffffff;
+  border-color: #111827;
+}
+
+.increment:hover:not(:disabled) {
+  background: #374151;
+}
+
+.decrement {
+  background: #ffffff;
+}
+
+.decrement:hover:not(:disabled) {
+  background: #f3f4f6;
+}
+
+.reset {
+  background: #f9fafb;
+  color: #6b7280;
+}
+
+.reset:hover {
+  background: #f3f4f6;
+  color: #374151;
 }
