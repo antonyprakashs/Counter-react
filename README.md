@@ -1,5 +1,7 @@
 React Counter Application ⏱️
+
 Overview
+
 A dynamic and interactive Counter Application built with React. This project serves as a practical implementation of React's useState hook to manage component state and update the UI in real-time.
 
 Features
